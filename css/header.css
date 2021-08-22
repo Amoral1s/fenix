@@ -10,6 +10,7 @@
   font-family: 'Golos';
   src: url("../fonts/500.ttf");
   font-style: 500;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -420,7 +421,7 @@ section, footer {
 
 .header-wrap-menu-call a:first-child {
   display: block;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 18px;
   margin-bottom: 5px;
 }
@@ -491,7 +492,7 @@ section, footer {
 
 .offer h1 {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 800;
   display: block;
   margin-bottom: 30px;
   max-width: 660px;
