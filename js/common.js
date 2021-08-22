@@ -23,7 +23,6 @@ jQuery(document).ready(function ($) {
 			infinite: false,
 			fade: false,
 			speed: 300,
-			lazyLoad: 'progressive',
 			slidesToShow: 1,
 			slidesToScroll: 1
 		});
