@@ -85,23 +85,15 @@ jQuery(document).ready(function ($) {
 		speed: 300,
 		lazyLoad: 'progressive',
 		slidesToShow: 1,
-		slidesToScroll: 1
-		/* ,
+		slidesToScroll: 1,
 		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
-				}
-			},
 			{
 				breakpoint: 578,
 				settings: {
-					slidesToShow: 1
+					fade: false
 				}
 			}
-		] */
+		] 
 	});
   
 	$('.callback').on('click', function() {
