@@ -888,6 +888,10 @@
   padding-bottom: 150px;
 }
 
+.sert .arrows {
+  display: none;
+}
+
 .sert-wrap {
   display: -webkit-box;
   display: -webkit-flex;
