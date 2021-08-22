@@ -337,6 +337,14 @@ section, footer {
 
 .header-wrap-logo {
   width: 260px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-wrap-logo img {
