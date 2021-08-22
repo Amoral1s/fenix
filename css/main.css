@@ -1812,6 +1812,10 @@
     margin-bottom: 20px;
     margin-right: 0;
   }
+  .projects-wrap,
+  .sert-wrap {
+    min-height: 200px;
+  }
   .projects-wrap .slick-prev,
   .sert-wrap .slick-prev {
     -webkit-transform: none;
