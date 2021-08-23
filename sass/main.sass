@@ -880,6 +880,23 @@
   background-repeat: no-repeat
   background-size: cover
   background-position: center
+  &-activities
+    padding-top: 0
+    .activities-wrap
+      justify-content: space-between
+    div
+      justify-content: flex-start
+      img
+        margin-right: 30px  
+      p
+        padding-right: 0
+      &:hover
+        .activities-wrap-item
+          background-color: $light
+        p
+          color: $dark
+        b
+          color: $gray
   &-map
     &-wrap
       padding: 50px 60px
@@ -919,6 +936,9 @@
         display: block
         width: calc(33.3% - 14px)
         margin-bottom: 40px
+        img
+          display: block
+          margin-bottom: 15px
   &-clients
     padding-top: 110px
     padding-bottom: 50px
@@ -976,6 +996,10 @@
         width: 450px
       &-left
         width: calc(100% - 550px)
+        p
+          font-size: 20px
+          margin-bottom: 20px
+          display: block
         ul
           li
             padding-left: 30px
@@ -1008,7 +1032,7 @@
           left: 0
           transform: translateY(-50%)
           background-color: $main
-    h2
+    h3
       font-size: 24px
       display: block
       margin-bottom: 40px
@@ -1108,10 +1132,97 @@
           background-color: $main
           padding: 2px 5px 5px 5px
           color: #fff
-
-
-
-
+  &-sys
+    padding-bottom: 70px
+    .service-about-wrap-item
+      h3
+        text-align: center
+  &-price
+    padding-bottom: 0
+    &-wrap
+      display: flex
+      justify-content: space-between
+      align-items: stretch
+      &-item
+        position: relative
+        width: calc(25% - 15px)
+        img
+          width: 100%
+          display: block
+          margin-bottom: 15px
+        .m
+          position: absolute
+          top: 0
+          right: 0
+          font-weight: 600
+          color: #fff
+          background-color: $main
+          padding: 3px 6px
+        h3
+          font-size: 18px
+          display: block
+          margin-bottom: 15px
+          min-height: 44px
+        b
+          font-size: 18px
+          font-weight: 600
+          color: $main
+          span
+            font-weight: 700
+  &-treb
+    p
+      font-size: 20px
+      display: block
+    &-wrap
+      background-color: $light
+      padding: 50px
+      margin: 50px 0
+      position: relative
+      &::after
+        position: absolute
+        content: ''
+        height: 170px
+        width: 170px
+        top: 50%
+        right: 50px
+        transform: translateY(-50%)
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+        background-image: url(../img/icons/treb.svg)
+      ol
+        li
+          font-size: 20px
+          margin-bottom: 30px
+          &:last-child
+            margin-bottom: 0
+  &-no
+    b
+      font-size: 18px
+      display: flex
+      align-items: center
+      margin-top: 40px
+      img
+        display: block
+        margin-right: 20px
+      p
+        font-size: 18px
+        font-weight: 700
+    &-wrap
+      display: block
+      &-item
+        width: 100%
+        padding: 25px 50px
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        margin-bottom: 30px
+        background: $light
+        img
+          display: block
+          margin-right: 25px
+        p
+          font-size: 20px
 
 
 

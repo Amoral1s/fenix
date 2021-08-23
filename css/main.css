@@ -1564,6 +1564,44 @@
   background-position: center;
 }
 
+.service-activities {
+  padding-top: 0;
+}
+
+.service-activities .activities-wrap {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.service-activities div {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.service-activities div img {
+  margin-right: 30px;
+}
+
+.service-activities div p {
+  padding-right: 0;
+}
+
+.service-activities div:hover .activities-wrap-item {
+  background-color: #F8F8F8;
+}
+
+.service-activities div:hover p {
+  color: #282828;
+}
+
+.service-activities div:hover b {
+  color: #E8E8E8;
+}
+
 .service-map-wrap {
   padding: 50px 60px;
   background-color: #fff;
@@ -1648,6 +1686,11 @@
   width: -webkit-calc(33.3% - 14px);
   width: calc(33.3% - 14px);
   margin-bottom: 40px;
+}
+
+.service-about-wrap-item img {
+  display: block;
+  margin-bottom: 15px;
 }
 
 .service-clients {
@@ -1770,6 +1813,12 @@
   width: calc(100% - 550px);
 }
 
+.service-paper-wrap-left p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
 .service-paper-wrap-left ul li {
   padding-left: 30px;
   position: relative;
@@ -1812,7 +1861,7 @@
   background-color: #F54E37;
 }
 
-.service-list h2 {
+.service-list h3 {
   font-size: 24px;
   display: block;
   margin-bottom: 40px;
@@ -2006,6 +2055,165 @@
   color: #fff;
 }
 
+.service-sys {
+  padding-bottom: 70px;
+}
+
+.service-sys .service-about-wrap-item h3 {
+  text-align: center;
+}
+
+.service-price {
+  padding-bottom: 0;
+}
+
+.service-price-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.service-price-wrap-item {
+  position: relative;
+  width: -webkit-calc(25% - 15px);
+  width: calc(25% - 15px);
+}
+
+.service-price-wrap-item img {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.service-price-wrap-item .m {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 600;
+  color: #fff;
+  background-color: #F54E37;
+  padding: 3px 6px;
+}
+
+.service-price-wrap-item h3 {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 15px;
+  min-height: 44px;
+}
+
+.service-price-wrap-item b {
+  font-size: 18px;
+  font-weight: 600;
+  color: #F54E37;
+}
+
+.service-price-wrap-item b span {
+  font-weight: 700;
+}
+
+.service-treb p {
+  font-size: 20px;
+  display: block;
+}
+
+.service-treb-wrap {
+  background-color: #F8F8F8;
+  padding: 50px;
+  margin: 50px 0;
+  position: relative;
+}
+
+.service-treb-wrap::after {
+  position: absolute;
+  content: '';
+  height: 170px;
+  width: 170px;
+  top: 50%;
+  right: 50px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center;
+  background-image: url(../img/icons/treb.svg);
+}
+
+.service-treb-wrap ol li {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.service-treb-wrap ol li:last-child {
+  margin-bottom: 0;
+}
+
+.service-no b {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.service-no b img {
+  display: block;
+  margin-right: 20px;
+}
+
+.service-no b p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.service-no-wrap {
+  display: block;
+}
+
+.service-no-wrap-item {
+  width: 100%;
+  padding: 25px 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 30px;
+  background: #F8F8F8;
+}
+
+.service-no-wrap-item img {
+  display: block;
+  margin-right: 25px;
+}
+
+.service-no-wrap-item p {
+  font-size: 20px;
+}
+
 @media (max-width: 1200px) {
   .setup-wrap-center {
     -webkit-justify-content: space-around;
@@ -2040,6 +2248,29 @@
   .service-offer-left {
     width: -webkit-calc(100% - 450px);
     width: calc(100% - 450px);
+  }
+  .service-offer-activities .activities-wrap-item p {
+    padding-right: 40px;
+  }
+  .service-activities div p {
+    font-size: 16px;
+    padding-right: 40px;
+  }
+  .call-wrap-left h2 {
+    padding-right: 15px;
+  }
+  .service-treb-wrap {
+    position: relative;
+  }
+  .service-treb-wrap p {
+    position: relative;
+  }
+  .service-treb-wrap ol {
+    position: relative;
+    z-index: 2;
+  }
+  .service-treb-wrap::after {
+    z-index: 1;
   }
 }
 
@@ -2362,6 +2593,16 @@
   .service-offer-left {
     width: 100%;
     margin-bottom: 50px;
+  }
+  .service-price-wrap {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .service-price-wrap-item {
+    width: -webkit-calc(50% - 10px);
+    width: calc(50% - 10px);
+    margin-bottom: 30px;
   }
 }
 
@@ -2852,7 +3093,7 @@
     font-size: 16px;
     line-height: 1.5;
   }
-  .service-list h2 {
+  .service-list h3 {
     font-size: 20px;
   }
   .service-system-wrap-item {
@@ -2863,6 +3104,51 @@
   }
   .service-offer-right img {
     height: 200px;
+  }
+  .call-wrap-left h2 {
+    font-size: 26px;
+    padding-right: 0;
+  }
+  .call-wrap-left p {
+    font-size: 18px;
+  }
+  .service-price-wrap-item {
+    width: 100%;
+  }
+  .service-price-wrap-item h3 {
+    font-size: 20px;
+  }
+  .service-paper-wrap-left p,
+  .service-treb p,
+  .service-treb-wrap ol li {
+    font-size: 16px;
+  }
+  .service-treb-wrap {
+    padding: 20px;
+  }
+  .service-no-wrap-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 20px;
+  }
+  .service-no-wrap-item p {
+    font-size: 16px;
+  }
+  .service-no-wrap-item img {
+    margin-bottom: 30px;
+  }
+  .service-about p {
+    font-size: 18px;
+  }
+  .subtitle {
+    font-size: 18px;
   }
 }
 
