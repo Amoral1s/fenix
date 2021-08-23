@@ -156,6 +156,113 @@
         p
           margin-bottom: 20px
 
+  .page
+    padding-top: 100px
+
+  .single
+    &-subtitle
+      font-size: 16px
+      margin-bottom: 30px
+      margin-top: -20px
+    &-thumb
+      display: block
+      margin-bottom: 30px
+      img
+        width: 100%
+        height: auto
+        object-fit: cover
+        display: block
+    &-content
+      font-size: 16px
+      .wp-block-image
+        display: block
+        margin: 30px 0
+        img
+          object-fit: contain
+          width: 100%
+      h1
+        font-size: 28px
+      h2
+        font-size: 26px
+      h3
+        font-size: 24px
+      h4
+        font-size: 22px
+      h5
+        font-size: 20px
+      h6
+        font-size: 18px
+      h1,h2,h3,h4,h5,h6
+        margin-top: 30px
+        margin-bottom: 20px
+        display: block
+      p
+        margin-bottom: 15px
+        line-height: 1.5
+      a
+        color: $main
+      ul, ol
+        margin-top: 20px
+        margin-bottom: 20px
+        li
+          margin-bottom: 20px
+      ol
+        padding-left: 20px
+      ul
+        padding-left: 0px
+        li
+          position: relative
+          padding-left: 20px
+          &::after
+            position: absolute
+            content: ''
+            height: 8px
+            width: 8px
+            background-color: $main
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            border-radius: 100%
+
+  .service-paper-wrap-left ul li,
+  .service-paper-wrap-bot
+    font-size: 16px
+
+  .service-about-wrap-item
+    width: 100%
+
+  .service-map-wrap
+    padding: 20px
+    p
+      font-size: 16px
+
+  .service-list .list-bot
+    font-size: 16px
+
+  .service
+    &-list
+      
+      ul
+        li
+          font-size: 16px
+          line-height: 1.5
+      h2
+        font-size: 20px
+    &-system
+      &-wrap
+        &-item
+          width: 100%
+    &-tax
+      &-wrap
+        &-item
+          width: 100%
+    &-offer
+      &-right
+        img
+          height: 200px
+
+
+
   @media (max-width: 360px)
     .title
       font-size: 24px

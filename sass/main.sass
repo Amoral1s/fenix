@@ -809,9 +809,305 @@
     font-size: 20px
     margin: 0 5px
 
+.single
+  &-subtitle
+    display: block
+    font-size: 18px
+    max-width: 670px
+    width: 100%
+    margin-bottom: 30px
+    margin-top: -30px
+  &-thumb
+    display: block
+    margin-bottom: 50px
+    img
+      width: 100%
+      height: 450px
+      object-fit: cover
+      display: block
+  &-content
+    .wp-block-image
+      display: block
+      margin: 30px 0
+      img
+        object-fit: contain
+        width: 100%
+    h1
+      font-size: 36px
+    h2
+      font-size: 32px
+    h3
+      font-size: 28px
+    h4
+      font-size: 24px
+    h5
+      font-size: 20px
+    h6
+      font-size: 18px
+    h1,h2,h3,h4,h5,h6
+      margin-top: 50px
+      margin-bottom: 30px
+      display: block
+    p
+      margin-bottom: 20px
+      line-height: 1.5
+    a
+      color: $main
+    ul, ol
+      margin-top: 20px
+      margin-bottom: 20px
+      li
+        margin-bottom: 20px
+    ol
+      padding-left: 20px
+    ul
+      padding-left: 0px
+      li
+        position: relative
+        padding-left: 20px
+        &::after
+          position: absolute
+          content: ''
+          height: 8px
+          width: 8px
+          background-color: $main
+          left: 0
+          top: 50%
+          transform: translateY(-50%)
+          border-radius: 100%
 
-
-
+.service
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  &-map
+    &-wrap
+      padding: 50px 60px
+      background-color: #fff
+      width: max-content
+      p
+        font-size: 22px
+        display: block
+        margin-bottom: 20px
+      .phone
+        font-weight: 700
+        display: flex
+        align-items: center
+        margin-bottom: 20px
+        p
+          margin-right: 10px
+          margin-bottom: 0
+      .email
+        display: flex
+        align-items: center
+        p
+          margin-bottom: 0
+        img
+          margin-right: 10px
+  &-about
+    padding-bottom: 0
+    p
+      font-size: 20px
+      display: block
+      margin-bottom: 60px
+    &-wrap
+      display: flex
+      justify-content: space-between
+      align-items: stretch
+      flex-wrap: wrap
+      &-item
+        display: block
+        width: calc(33.3% - 14px)
+        margin-bottom: 40px
+  &-clients
+    padding-top: 110px
+    padding-bottom: 50px
+    .title
+      max-width: 100%
+      margin-bottom: 60px
+    &-wrap
+      display: flex
+      justify-content: space-between
+      align-items: center
+  &-cost
+    padding-top: 110px
+    padding-bottom: 0
+    &-wrap
+      display: flex
+      align-items: center
+      .button
+        margin-right: 50px
+      b
+        font-size: 18px
+    ul
+      margin-bottom: 50px
+      li
+        padding-left: 30px
+        position: relative
+        margin-bottom: 25px
+        font-size: 18px
+        &::after
+          position: absolute
+          content: ''
+          height: 10px
+          width: 10px
+          top: 50%
+          transform: translateY(-50%)
+          left: 0
+          background-color: $main
+  &-why
+    padding-top: 110px
+    padding-bottom: 0
+    p
+      font-size: 20px
+  &-paper
+    padding-top: 110px
+    padding-bottom: 0
+    &-wrap
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: flex-start
+      &-bot
+        display: block
+        margin-top: 20px
+        font-size: 18px
+      &-right
+        width: 450px
+      &-left
+        width: calc(100% - 550px)
+        ul
+          li
+            padding-left: 30px
+            position: relative
+            margin-bottom: 30px
+            font-size: 20px
+            &::after
+              position: absolute
+              content: ''
+              height: 10px
+              width: 10px
+              top: 5px
+              left: 0
+              background-color: $main
+  &-list
+    padding-top: 90px
+    padding-bottom: 0px
+    ul
+      li
+        padding-left: 30px
+        position: relative
+        margin-bottom: 30px
+        font-size: 20px
+        &::after
+          position: absolute
+          content: ''
+          height: 10px
+          width: 10px
+          top: 50%
+          left: 0
+          transform: translateY(-50%)
+          background-color: $main
+    h2
+      font-size: 24px
+      display: block
+      margin-bottom: 40px
+    .list-bot
+      padding-left: 0
+      padding-right: 0
+      margin-top: 40px
+  &-system
+    &-wrap
+      display: flex
+      justify-content: space-between
+      align-items: stretch
+      flex-wrap: wrap
+      &-item
+        width: calc(25% - 15px)
+        margin-bottom: 40px
+        h3
+          font-size: 18px
+          font-weight: 500
+          margin-top: 20px
+          display: block
+  &-tax
+    padding-top: 0
+    padding-bottom: 20px
+    &-wrap
+      display: flex
+      justify-content: space-between
+      align-items: stretch
+      &-item
+        width: calc(25% - 15px)
+        margin-bottom: 20px
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        flex-direction: column
+        padding: 40px 20px
+        background-color: $light
+        p
+          font-size: 22px
+          display: block
+          text-align: center
+          margin-bottom: 15px
+        img
+          display: block
+          margin-bottom: 15px
+        b
+          font-size: 36px
+          span
+            font-size: 26px
+            font-weight: 600
+  &-offer
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    ul
+      margin-bottom: 40px
+      li
+        padding-left: 30px
+        position: relative
+        font-size: 20px
+        margin-bottom: 15px 
+        &::after
+          position: absolute
+          content: ''
+          height: 10px
+          width: 10px
+          left: 0
+          top: 50%
+          transform: translateY(-50%)
+          background-color: $main
+    &-right
+      width: 600px
+      position: relative
+      &::after
+        position: absolute
+        content: ''
+        height: 200px
+        width: 400px
+        right: -30px
+        bottom: -30px
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: right bottom
+        background-image: url(../img/bg-form.svg)
+        z-index: -1
+      img
+        width: 100%
+        object-fit: contain
+    &-left
+      width: calc(100% - 650px)
+      .button
+        max-width: 240px
+      h1
+        display: block
+        margin-bottom: 30px
+        span
+          background-color: $main
+          padding: 2px 5px 5px 5px
+          color: #fff
 
 
 
