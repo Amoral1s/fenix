@@ -10,6 +10,7 @@
   left: 0
   width: 100%
   margin-top: 40px
+  z-index: 90
   &-wrap
     display: flex
     justify-content: space-between
@@ -40,6 +41,47 @@
           a
             display: block
             font-weight: 600
+        li.drop
+          position: relative
+          &>a
+            position: relative
+            padding-right: 22px
+            &::after
+              position: absolute
+              content: ''
+              height: 20px
+              width: 20px
+              background-repeat: no-repeat
+              background-size: contain
+              background-position: center
+              background-image: url(../img/icons/drop.svg)
+              right: 0
+              top: 50%
+              transform: translateY(-50%)
+          ul
+            position: absolute
+            background-color: $dark
+            display: none
+            padding: 25px 40px
+            width: max-content
+            left: -40px
+            top: calc(100% + 20px)
+            &::after
+              position: absolute
+              height: 20px
+              width: 100%
+              top: -20px
+              left: 0
+              content: ''
+            li
+              margin-bottom: 15px
+              width: max-content
+              max-width: 400px  
+              a
+                font-weight: 400
+                font-size: 16px
+              &:last-child
+                margin-bottom: 0
       &-call
         display: flex
         flex-direction: column
@@ -65,6 +107,39 @@
           background-size: contain
           background-position: center
           background-image: url(../img/icons/wap.svg)
+  &-page
+    .header-wrap-menu-call::after 
+      position: absolute
+      content: ''
+      height: 24px
+      width: 24px
+      right: 0
+      top: 0
+      background-repeat: no-repeat
+      -webkit-background-size: contain
+      background-size: contain
+      background-position: center
+      background-image: url(../img/icons/wap-red.svg)
+    .header-wrap-menu
+      ul
+        li
+          a
+            color: $dark
+            &::after
+              background-image: url(../img/icons/drop-page.svg)
+            &:hover
+              color: $main
+    .header-wrap-menu-call
+      a
+        color: $dark
+        
+        &:hover
+          color: $main     
+
+    .header-wrap-menu ul li.drop ul li a
+      color: #fff
+      &:hover
+        color: $main
 
 .button
   display: flex

@@ -318,6 +318,7 @@ section, footer {
   left: 0;
   width: 100%;
   margin-top: 40px;
+  z-index: 90;
 }
 
 .header-wrap {
@@ -404,6 +405,71 @@ section, footer {
   font-weight: 600;
 }
 
+.header-wrap-menu ul li.drop {
+  position: relative;
+}
+
+.header-wrap-menu ul li.drop > a {
+  position: relative;
+  padding-right: 22px;
+}
+
+.header-wrap-menu ul li.drop > a::after {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center;
+  background-image: url(../img/icons/drop.svg);
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header-wrap-menu ul li.drop ul {
+  position: absolute;
+  background-color: #282828;
+  display: none;
+  padding: 25px 40px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  left: -40px;
+  top: -webkit-calc(100% + 20px);
+  top: calc(100% + 20px);
+}
+
+.header-wrap-menu ul li.drop ul::after {
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  top: -20px;
+  left: 0;
+  content: '';
+}
+
+.header-wrap-menu ul li.drop ul li {
+  margin-bottom: 15px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 400px;
+}
+
+.header-wrap-menu ul li.drop ul li a {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.header-wrap-menu ul li.drop ul li:last-child {
+  margin-bottom: 0;
+}
+
 .header-wrap-menu-call {
   display: -webkit-box;
   display: -webkit-flex;
@@ -446,6 +512,48 @@ section, footer {
           background-size: contain;
   background-position: center;
   background-image: url(../img/icons/wap.svg);
+}
+
+.header-page .header-wrap-menu-call::after {
+  position: absolute;
+  content: '';
+  height: 24px;
+  width: 24px;
+  right: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../img/icons/wap-red.svg);
+}
+
+.header-page .header-wrap-menu ul li a {
+  color: #282828;
+}
+
+.header-page .header-wrap-menu ul li a::after {
+  background-image: url(../img/icons/drop-page.svg);
+}
+
+.header-page .header-wrap-menu ul li a:hover {
+  color: #F54E37;
+}
+
+.header-page .header-wrap-menu-call a {
+  color: #282828;
+}
+
+.header-page .header-wrap-menu-call a:hover {
+  color: #F54E37;
+}
+
+.header-page .header-wrap-menu ul li.drop ul li a {
+  color: #fff;
+}
+
+.header-page .header-wrap-menu ul li.drop ul li a:hover {
+  color: #F54E37;
 }
 
 .button {
@@ -634,13 +742,15 @@ section, footer {
     display: none;
     padding-left: 15px;
     position: fixed;
-    top: 0;
+    top: 70px;
     z-index: 89;
     background-color: #282828;
     width: 100%;
     left: 0;
-    padding-top: 90px;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 130px;
+    height: 100%;
+    overflow-y: auto;
   }
   .header-wrap-menu ul {
     z-index: 90;
@@ -651,6 +761,23 @@ section, footer {
   }
   .header-wrap-menu ul li a {
     font-size: 18px;
+  }
+  .header-wrap-menu ul li.drop > a {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding-right: 20px;
+  }
+  .header-wrap-menu ul li.drop ul {
+    position: relative;
+    padding: 15px 0 15px 10px;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+  }
+  .header-wrap-menu ul li.drop ul li {
+    max-width: 100%;
   }
   .header-wrap-menu-call {
     -webkit-box-align: start;
@@ -669,6 +796,26 @@ section, footer {
   }
   .header-wrap-menu-call a:last-child {
     font-size: 18px;
+  }
+  .header-page .burger span {
+    background-color: #282828;
+  }
+  .header-active-menu.header-page {
+    background-color: #fff;
+  }
+  .header-active-menu.header-page .header-wrap-menu {
+    background-color: #fff;
+  }
+  .header-active-menu.header-page .header-wrap-menu ul li.drop ul {
+    background: #fff;
+  }
+  .header-active-menu.header-page .header-wrap-menu ul li.drop ul li a {
+    color: #282828;
+  }
+  .header-active.header-page {
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 2px rgba(245, 78, 55, 0.2);
+            box-shadow: 0 2px 2px rgba(245, 78, 55, 0.2);
   }
 }
 

@@ -1,5 +1,11 @@
 jQuery(document).ready(function ($) {
 
+	$('.drop').hover(function(){
+		$(this).children('ul').slideDown(200);
+	}, function(){
+		$(this).children('ul').slideUp(200);
+	});
+
 	if ($(window).width() < 992) {
 		$('.burger').on('click', function () { 
 			$(this).toggleClass('burger-active');
