@@ -2105,14 +2105,14 @@
 }
 
 .service-price-wrap-item h3 {
-  font-size: 18px;
+  font-size: 20px;
   display: block;
   margin-bottom: 15px;
   min-height: 44px;
 }
 
 .service-price-wrap-item b {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
   color: #F54E37;
 }
@@ -2212,6 +2212,136 @@
 
 .service-no-wrap-item p {
   font-size: 20px;
+}
+
+.service-montage {
+  padding-top: 0;
+  padding-bottom: 110px;
+}
+
+.service-montage-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.service-montage-wrap-item {
+  width: -webkit-calc(20% - 20px);
+  width: calc(20% - 20px);
+}
+
+.service-montage-wrap-item img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.service-montage-wrap-item p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.service-vide {
+  padding-bottom: 110px;
+  padding-top: 110px;
+}
+
+.service-vide-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.service-vide-wrap-item {
+  width: -webkit-calc(50% - 30px);
+  width: calc(50% - 30px);
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.service-vide-wrap-item::after {
+  position: absolute;
+  content: '';
+  height: 10px;
+  width: 10px;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #F54E37;
+}
+
+.service-objects {
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
+.service-objects-wrap {
+  background-color: #282828;
+  padding: 30px 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.service-objects-wrap .button {
+  margin-left: 60px;
+}
+
+.service-montage-price {
+  padding-bottom: 70px;
+}
+
+.service-montage-price .service-price-wrap {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.service-montage-price .service-price-wrap-item {
+  width: -webkit-calc(33.3% - 15px);
+  width: calc(33.3% - 15px);
+  margin-bottom: 40px;
+}
+
+.service-montage-price .service-price-wrap-item h3 {
+  min-height: 0;
 }
 
 @media (max-width: 1200px) {
@@ -2604,6 +2734,39 @@
     width: calc(50% - 10px);
     margin-bottom: 30px;
   }
+  .service-montage-wrap {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  .service-montage-wrap-item {
+    width: -webkit-calc(33.3% - 20px);
+    width: calc(33.3% - 20px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px;
+  }
+  .service-montage-wrap-item p {
+    text-align: center;
+  }
+  .service-montage-price .service-price-wrap-item {
+    width: -webkit-calc(50% - 10px);
+    width: calc(50% - 10px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -2741,6 +2904,25 @@
   .service-cost-wrap .button {
     margin-right: 0;
     margin-bottom: 30px;
+  }
+  .service-objects-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .service-objects-wrap .button {
+    margin-left: 0;
+    margin-top: 50px;
   }
 }
 
@@ -3149,6 +3331,55 @@
   }
   .subtitle {
     font-size: 18px;
+  }
+  .service-montage-wrap {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .service-montage-wrap-item {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .service-montage-wrap-item p {
+    text-align: start;
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  .service-vide-wrap-item {
+    width: 100%;
+  }
+  .service-vide {
+    padding-bottom: 70px;
+  }
+  .service-objects {
+    padding-top: 40px;
+  }
+  .service-objects-wrap {
+    padding: 20px;
+  }
+  .service-objects-wrap p {
+    font-size: 20px;
+  }
+  .service-objects-wrap .button {
+    margin-top: 30px;
+  }
+  .service-montage-price .service-price-wrap-item {
+    width: 100%;
   }
 }
 
