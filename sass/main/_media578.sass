@@ -25,7 +25,12 @@
     b
       font-size: 40px
       right: 20px
-
+  .setup
+    &::before
+      height: 150px
+      width: 200px
+      left: -65px
+      top: 55px
   .setup-wrap
     &-bot
       padding: 0
@@ -118,13 +123,15 @@
 
   .sert
     &-wrap
+      img
+        display: block
       .slick-prev
-      transform: none
-      left: 0
-    .slick-next
-      transform: none
-      left: auto
-      right: 0
+        transform: none
+        left: 0
+      .slick-next
+        transform: none
+        left: auto
+        right: 0
   .projects
     &-wrap
       min-height: 200px
@@ -320,19 +327,26 @@
 
   .service-price-wrap-item h3
     min-height: 0
+  .popup
+    max-width: 95vw
+    max-height: 95vh
+    &-wrap
+      padding: 25px
+      h3
+        padding-right: 20px
 
 
-  @media (max-width: 360px)
-    .title
-      font-size: 24px
+@media (max-width: 360px)
+  .title
+    font-size: 24px
 
-    .offer h1
-      font-size: 30px
+  .offer h1
+    font-size: 30px
 
-    .offer p span
-      font-size: 20px
-    .offer .button
-      font-size: 20px
-    .setup-wrap-top-item h3
-      font-size: 18px
+  .offer p span
+    font-size: 20px
+  .offer .button
+    font-size: 20px
+  .setup-wrap-top-item h3
+    font-size: 18px
 

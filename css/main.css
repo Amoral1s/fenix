@@ -138,8 +138,12 @@
           background-size: contain;
   background-position: left top;
   background-image: url(../img/setup/bg.svg);
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: -webkit-calc(50% - 530px);
+  left: calc(50% - 530px);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .setup-wrap {
@@ -2345,6 +2349,12 @@
 }
 
 @media (max-width: 1200px) {
+  .setup::before {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    left: -100px;
+  }
   .setup-wrap-center {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
@@ -2589,7 +2599,8 @@
     opacity: .3;
   }
   .sert .slick-next {
-    left: 240px;
+    left: auto;
+    right: 50px;
     background-image: url(../img/icons/arr-right.svg);
   }
   .sert .arrows {
@@ -2962,6 +2973,12 @@
     font-size: 40px;
     right: 20px;
   }
+  .setup::before {
+    height: 150px;
+    width: 200px;
+    left: -65px;
+    top: 55px;
+  }
   .setup-wrap-bot {
     padding: 0;
     -webkit-box-align: start;
@@ -3098,13 +3115,16 @@
     margin-bottom: 20px;
     margin-right: 0;
   }
-  .sert-wrap {
+  .sert-wrap img {
+    display: block;
+  }
+  .sert-wrap .slick-prev {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
     left: 0;
   }
-  .sert .slick-next {
+  .sert-wrap .slick-next {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
@@ -3384,9 +3404,19 @@
   .service-price-wrap-item h3 {
     min-height: 0;
   }
+  .popup {
+    max-width: 95vw;
+    max-height: 95vh;
+  }
+  .popup-wrap {
+    padding: 25px;
+  }
+  .popup-wrap h3 {
+    padding-right: 20px;
+  }
 }
 
-@media (max-width: 578px) and (max-width: 360px) {
+@media (max-width: 360px) {
   .title {
     font-size: 24px;
   }
